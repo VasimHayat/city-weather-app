@@ -3,6 +3,17 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ![scrren](https://raw.githubusercontent.com/VasimHayat/city-weather-app/master/src/assets/images/weather.PNG)
+
+## Google Place API
+
+
+Using Google Place API - Change API Key in index.html file
+ 
+ ## Openweathermap 
+ 
+ 
+  Genrate openweathermap key and replace inside the  WForecastService
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
