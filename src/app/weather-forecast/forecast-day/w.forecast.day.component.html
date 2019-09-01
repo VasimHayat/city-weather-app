@@ -1,0 +1,17 @@
+ <div class="card" *ngIf="forecastDay"  (click)="handleClick()">
+        <div class="card-body" [ngClass]="{'active':isActive}">
+            <div class="wday-temprature d-inline-block "> 
+                <div>
+                    <img src="https://openweathermap.org/img/wn/{{forecastDay.weather[0].icon}}.png">
+                </div>             
+                <div>{{forecastDay.main.temp  | number: '.2-2'}}&#8451;</div>
+            </div>
+    
+            <div class="d-inline-block wday-date-block">
+                <span class="day-desc">{{forecastDay.dt_txt | date:'EEEE'}}</span>
+                <br>
+                <span> {{forecastDay.dt_txt|date: 'hh:mm a'}}</span>
+            </div> 
+    
+        </div>
+    </div>

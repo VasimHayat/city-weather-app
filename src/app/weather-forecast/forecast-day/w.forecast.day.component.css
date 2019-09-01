@@ -1,0 +1,25 @@
+.card-body{
+    background-color:#7210B3;
+    color:#fff;
+    font-size: 20px;
+    padding:1rem;
+    cursor: pointer;
+   
+} 
+ 
+.wday-temprature{
+    border-right:  1px solid #95d8b8;
+    padding:0  55px;
+}
+.card-body.active{
+    background-color:#951090;
+}
+.wday-date-block{
+    padding-left:38px;
+
+}
+span.day-desc {
+    font-size: 31px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}

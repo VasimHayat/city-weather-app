@@ -1,0 +1,33 @@
+.card{
+    background-color:#7210B3;
+    color:#fff;
+}
+p.wcity-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom:1px;
+}
+.wcity-temprature {
+    font-size: 70px;
+    font-family: 'Lemonada', cursive;
+    padding: 25px;
+}
+.wcity-day{
+    border-bottom: 1px solid #9cb7b3;
+    padding: 10px;
+}
+.wcity-day span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wcity-temp-detail {
+    padding: 48px 20px;
+}
+.wcity-temp-span {
+    width: 12.5%;
+    text-align: center;
+}
+.wcity-temp-span  img{
+    width: 100%;
+    margin:25px 0;
+}

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+.font-russo{
+    font-family: 'Russo One', sans-serif;
+}
+.font-stencil{
+    font-family: 'Saira Stencil One', cursive;
+}
+.font-berkshire{
+    font-family: 'Berkshire Swash', cursive;
+}

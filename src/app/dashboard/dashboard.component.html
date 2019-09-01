@@ -1,0 +1,16 @@
+<div class="col-12 dashboard-container">
+    <div class="col-12 ">
+        <div class="offset-md-3 col-6">
+            <w-forecast-city (locationUpdate)="locationListner($event)"></w-forecast-city>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <w-forecast-day [forecastDay]="wForecastDay" [isActive]="wForecastDay.isActive" (selectDay)="onSelecteWForecastDay($event,wForecastDay)"
+                    *ngFor="let wForecastDay of wUniqForecastDayArray"></w-forecast-day>
+            </div>
+            <div class="col-6" *ngIf="selectedWForecastDay">
+                <w-forecast-day-detail [wCity]="wCity" [wForecatDayDetailArray]="selectedWForecastDay" [activeDayDetail]="activeDayDetail"></w-forecast-day-detail>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="card" *ngIf="wForecatDayDetailArray && wForecatDayDetailArray.length>0">
+    <div class="card-body">
+        <div class="col-12 text-center">
+            <p class="wcity-name">{{wCity}}</p>
+            <span class="">{{activeDayDetail.weather[0].description}}</span>
+            <div class="wcity-temprature">
+                {{activeDayDetail.main.temp | number: '.2-2'}}&#8451;
+            </div>
+            <div>
+                <img src="https://openweathermap.org/img/wn/{{activeDayDetail.weather[0].icon}}@2x.png">
+            </div>
+            <div class="wcity-day">
+                <span>{{activeDayDetail.dt_txt | date:'EEEE'}}</span>
+            </div>
+        </div>
+        <div class="wcity-temp-detail">
+            <div class="wcity-temp-span d-inline-block" *ngFor="let wForecastDay of wForecatDayDetailArray">
+                <div>{{wForecastDay.dt_txt|date: 'hh:mm a'}}</div>
+                <div>
+                    <img src="https://openweathermap.org/img/wn/{{wForecastDay.weather[0].icon}}.png">
+                </div>
+                <div> {{activeDayDetail.main.temp | number: '.2-2'}}&#8451;</div>
+            </div>
+
+        </div>
+    </div>
+</div>
